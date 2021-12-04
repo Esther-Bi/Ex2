@@ -39,11 +39,6 @@ public class DirectedWeightedGraphAlgorithmsC implements DirectedWeightedGraphAl
     }
 
     @Override
-    public List<NodeData> tsp(List<NodeData> cities) {
-        return null;
-    }
-
-    @Override
     public boolean save(String file) {
         return false;
     }
@@ -51,5 +46,10 @@ public class DirectedWeightedGraphAlgorithmsC implements DirectedWeightedGraphAl
     @Override
     public boolean load(String file) {
         return false;
+    }
+
+    @Override
+    public List<NodeData> tsp(List<NodeData> cities) {
+        return null;
     }
 }
