@@ -63,7 +63,7 @@ pseudocode:
 ![alt text](C:\Users\talia\Downloads\psd_dijkastra.jpeg)
 relax:help function for dijkastra, Updates key and pointer for each node, and removes the irrelevant nodes from the list Q.<br>
 pseudocode:
-
+![image](https://user-images.githubusercontent.com/80401712/145459436-fb1d6848-123f-4f88-bf5e-5a157dc0409c.png)Image description
 shortestPath: return the path (through which nodes need to go) in the fastest way from the source node to the destinent node using edges of the graph.<br>
 center: return the node which represents the center of the graph.<br>
 centerOfNode: help fanction to center, find the length of the longest path between the src node to the farthest (going in the shortest path that can be reached to each node).<br>
