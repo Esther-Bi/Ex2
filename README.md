@@ -94,6 +94,25 @@ exsampel to presentation of G2:<br>
 our menu:<br>
 ![m1c](https://user-images.githubusercontent.com/80401712/145460767-2ffdaadb-8b28-400d-9849-e5b91c56c211.jpg)
 ![m2c](https://user-images.githubusercontent.com/80401712/145460830-17a88040-257a-4c5d-a4a6-f9d495705e1a.jpg)
-![m3c](https://user-images.githubusercontent.com/80401712/145460874-fc69e0d9-f21a-41c3-9810-20b2359cfbae.jpg)
+![m3c](https://user-images.githubusercontent.com/80401712/145460874-fc69e0d9-f21a-41c3-9810-20b2359cfbae.jpg)<br>
+paint the center in G2:<br>
+![image](https://user-images.githubusercontent.com/80401712/145461130-103ba693-af0c-4020-8a6e-e02b4d1e10e0.png)<br>
+show shortPath between 27 and 13:<br>
+![image](https://user-images.githubusercontent.com/80401712/145461317-d0fac1bc-af5d-4f08-8721-f63ded92ee71.png)<br>
+isConected in G3:
+![image](https://user-images.githubusercontent.com/80401712/145461422-a4aaa712-7eab-4e1f-bf52-d628824893e8.png)<br>
+shortPatfDist:<br>
+![image](https://user-images.githubusercontent.com/80401712/145461621-6d01d247-9aa7-4e38-8f59-dece29fc2709.png)<br>
+tsp in G2, the given list: 16,7,2,13.<br>
+![image](https://user-images.githubusercontent.com/80401712/145462344-6c2ca5e9-3464-4a9f-aa7e-2de88f6331ce.png)<br>
+add node 38:<br>
+![image](https://user-images.githubusercontent.com/80401712/145462833-16fc9a3b-fc92-455e-a55b-a9eb1f9a20c2.png)<br>
+add adge between 6 and 15:<br>
+![image](https://user-images.githubusercontent.com/80401712/145462804-48ff283f-7439-41e7-b2e1-01541810d23f.png)<br>
+remuve nodes 32,39 frome G3:<br>
+![image](https://user-images.githubusercontent.com/80401712/145463022-8f8723fa-debf-4466-a058-c523ee339b12.png)<br>
+remuve edges 15-16, and 7-8:<br>
+![image](https://user-images.githubusercontent.com/80401712/145463051-7ba599f1-a9ff-41c1-b8cd-936ada03295e.png)<br>
+
 
 
