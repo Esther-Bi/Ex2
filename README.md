@@ -60,16 +60,17 @@ shortestPathDist: return the weight of the shortest path between src and dest.<b
 minWeight: return the node with the minimum weight in the hashmap.<br>
 dijkastra: An algorithm that runs on the entire graph, gets one node to be the source and initializes the weight of all of the other nodes to be the minimum path from the source node to the node itself.<br> 
 pseudocode:
-
+![alt text](C:\Users\talia\Downloads\psd_dijkastra.jpeg)
 relax:help function for dijkastra, Updates key and pointer for each node, and removes the irrelevant nodes from the list Q.<br>
 pseudocode:
 
 shortestPath: return the path (through which nodes need to go) in the fastest way from the source node to the destinent node using edges of the graph.<br>
-center: return the node which represents the center of the graph.
-centerOfNode: help fanction to center, find the length of the path from the src node to the dest node (going in the shortest path that can be reached to each node)
-tsp: Gets list of nodes, return the nods in the order that creates the shortest path that contains them all (the traveling agent problem).
-save: save the graph to json file.
-load: creat the graph from json file. 
+center: return the node which represents the center of the graph.<br>
+centerOfNode: help fanction to center, find the length of the longest path between the src node to the farthest (going in the shortest path that can be reached to each node).<br>
+tsp: Gets list of nodes, return the nods in the order that creates the shortest path that contains them all (the traveling agent problem).<br>
+A greedy algorithm, starting from the first node in the list, goes over all the other nodes in the list and returns the node in the shortest path (can also pass in nodes that are not in the list but in the graph), once a node enters the sorted list it's removed from the list we received. Each time pulling out the next node closest to the current node.<br>
+save: save the graph to json file.<br>
+load: creat the graph from json file. <br>
 
 <br>
 
@@ -86,3 +87,6 @@ Clicking on Add Node: adds to the graph a new node according to given values and
 Clicking on Add Edge: adds to the graph a new edge according to given values and shows it.<br>
 Clicking on Remove Node: removes the given node and all the edges connected to it from the graph and shows the graph.<br>
 Clicking on Remove Edge: removes the given edge from the graph and shows the graph.<br>
+
+##Exsampels from our GUI:
+![alt text](http://url/to/img.png)
