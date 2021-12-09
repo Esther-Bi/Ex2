@@ -60,10 +60,10 @@ shortestPathDist: return the weight of the shortest path between src and dest.<b
 minWeight: return the node with the minimum weight in the hashmap.<br>
 dijkastra: An algorithm that runs on the entire graph, gets one node to be the source and initializes the weight of all of the other nodes to be the minimum path from the source node to the node itself.<br> 
 pseudocode:
-![alt text](C:\Users\talia\Downloads\psd_dijkastra.jpeg)
+![image](https://user-images.githubusercontent.com/80401712/145459603-e3d2347c-77b8-4f8e-b4f7-14f19838e18f.png)<br>
 relax:help function for dijkastra, Updates key and pointer for each node, and removes the irrelevant nodes from the list Q.<br>
 pseudocode:
-![image](https://user-images.githubusercontent.com/80401712/145459436-fb1d6848-123f-4f88-bf5e-5a157dc0409c.png)Image description
+![image](https://user-images.githubusercontent.com/80401712/145459660-12d71edd-f916-410c-a399-a7e877eb5463.png)<br>
 shortestPath: return the path (through which nodes need to go) in the fastest way from the source node to the destinent node using edges of the graph.<br>
 center: return the node which represents the center of the graph.<br>
 centerOfNode: help fanction to center, find the length of the longest path between the src node to the farthest (going in the shortest path that can be reached to each node).<br>
@@ -89,4 +89,11 @@ Clicking on Remove Node: removes the given node and all the edges connected to i
 Clicking on Remove Edge: removes the given edge from the graph and shows the graph.<br>
 
 ##Exsampels from our GUI:
-![alt text](http://url/to/img.png)
+exsampel to presentation of G2:<br>
+![image](https://user-images.githubusercontent.com/80401712/145460015-38936055-f411-450b-b22f-09a58eaf1cc9.png)<br>
+our menu:<br>
+![m1c](https://user-images.githubusercontent.com/80401712/145460767-2ffdaadb-8b28-400d-9849-e5b91c56c211.jpg)
+![m2c](https://user-images.githubusercontent.com/80401712/145460830-17a88040-257a-4c5d-a4a6-f9d495705e1a.jpg)
+![m3c](https://user-images.githubusercontent.com/80401712/145460874-fc69e0d9-f21a-41c3-9810-20b2359cfbae.jpg)
+
+
