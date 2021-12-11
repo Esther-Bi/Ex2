@@ -16,6 +16,23 @@ public class NodeDataC implements NodeData{
         this.tag = tag;
     }
 
+    public NodeDataC(int key,double x, double y) {
+        this.key = key;
+        GeoLocation g= new GeoLocationC(x,y,0);
+        this.Location = g;
+        this.weight = 0;
+        this.info = "";
+        this.tag = 0;
+    }
+
+    public NodeDataC(NodeDataC other){
+        this.key = other.key;
+        this.Location = new GeoLocationC(other.Location);
+        this.weight = other.weight;
+        this.info = new String(other.info);
+        this.tag = other.tag;
+    }
+
     @Override
     public int getKey() {
         return this.key;
@@ -63,4 +80,5 @@ public class NodeDataC implements NodeData{
         double z= p.z();
         this.Location= new GeoLocationC(x,y,z);
     }
+
 }

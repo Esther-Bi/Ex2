@@ -12,6 +12,12 @@ public class GeoLocationC implements GeoLocation{
         this.z = z;
     }
 
+    public GeoLocationC(GeoLocation other){
+        this.x = other.x();
+        this.y = other.y();
+        this.z = other.z();
+    }
+
     @Override
     public double x() {
         return this.x;
@@ -19,7 +25,7 @@ public class GeoLocationC implements GeoLocation{
 
     @Override
     public double y() {
-        return this.x;
+        return this.y;
     }
 
     @Override
@@ -32,5 +38,10 @@ public class GeoLocationC implements GeoLocation{
         // d = ((x2 - x1)2 + (y2 - y1)2 + (z2 - z1)2)1/2
         double dist = Math.sqrt(Math.pow((this.x()-g.x()) , 2) + Math.pow((this.y()-g.y()) , 2) + Math.pow((this.z()-g.z()) , 2));
         return dist;
+    }
+
+    @Override
+    public String toString() {
+        return "\"" + x + "," + y + "," + z + "\"";
     }
 }
