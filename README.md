@@ -90,21 +90,22 @@ The two classes holds all the gui data and show the graph with all the options o
 
 # Exsampels from our GUI:
 ***presentation exsample of G2:***<br>
-![image](https://user-images.githubusercontent.com/80401712/145460015-38936055-f411-450b-b22f-09a58eaf1cc9.png)<br>
+![WhatsApp Image 2021-12-12 at 20 38 04](https://user-images.githubusercontent.com/79116742/145725157-f4bdb1a8-3d96-472b-acbe-92bcfc7a61da.jpeg)<br>
 <br>
 ***our menu:***<br>
-![m1c](https://user-images.githubusercontent.com/80401712/145460767-2ffdaadb-8b28-400d-9849-e5b91c56c211.jpg)<br>
-![m2c](https://user-images.githubusercontent.com/80401712/145460830-17a88040-257a-4c5d-a4a6-f9d495705e1a.jpg)<br>
-![m3c](https://user-images.githubusercontent.com/80401712/145460874-fc69e0d9-f21a-41c3-9810-20b2359cfbae.jpg)<br>
+![WhatsApp Image 2021-12-12 at 20 26 37](https://user-images.githubusercontent.com/79116742/145724949-1ac75074-7bd0-4a1f-ae6b-4117d847c0ab.jpeg)
+![WhatsApp Image 2021-12-12 at 20 27 03](https://user-images.githubusercontent.com/79116742/145724962-62340eef-ffc3-48a8-b7e2-8ae7d4d5c11c.jpeg)
+![WhatsApp Image 2021-12-12 at 20 27 25](https://user-images.githubusercontent.com/79116742/145724963-98a6ce4f-e973-45f7-b57b-45a2f2ba891d.jpeg)
 <br>
-***show the center in G2:***<br>
-![image](https://user-images.githubusercontent.com/80401712/145461130-103ba693-af0c-4020-8a6e-e02b4d1e10e0.png)<br>
 <br>
-***show shortestPath between 27 and 13:***<br>
-![image](https://user-images.githubusercontent.com/80401712/145461317-d0fac1bc-af5d-4f08-8721-f63ded92ee71.png)<br>
+***show the center in G3:***<br>
+![WhatsApp Image 2021-12-12 at 20 28 13](https://user-images.githubusercontent.com/79116742/145725028-22060992-3d0b-4d8d-ad30-3e6c2d248194.jpeg)<br>
+<br>
+***show shortestPath between 13 and 27:***<br>
+![WhatsApp Image 2021-12-12 at 20 42 27](https://user-images.githubusercontent.com/79116742/145725258-a4541c23-68f9-4d69-87f5-79ff1283550c.jpeg)<br>
 <br>
 ***isConnected in G3:***<br>
-![image](https://user-images.githubusercontent.com/80401712/145461422-a4aaa712-7eab-4e1f-bf52-d628824893e8.png)<br>
+![WhatsApp Image 2021-12-12 at 20 44 29](https://user-images.githubusercontent.com/79116742/145725310-9b05ca2b-94d5-4363-afff-6b935d7478f8.jpeg)<br>
 <br>
 ***shortPathfDist:***<br>
 ![image](https://user-images.githubusercontent.com/80401712/145461621-6d01d247-9aa7-4e38-8f59-dece29fc2709.png)<br>
