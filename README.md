@@ -124,6 +124,8 @@ The two classes holds all the gui data and show the graph with all the options o
 ***remove edges 15-16, and 7-8:***<br>
 ![image](https://user-images.githubusercontent.com/80401712/145463051-7ba599f1-a9ff-41c1-b8cd-936ada03295e.png)<br>
 <br>
+## UML:
+![Ex2_UMLpng](https://user-images.githubusercontent.com/80401712/145724358-c7400be3-2a04-41c5-baae-df3617343d8c.png)<br>
 ## Results:
 Results | G1 | G2 | G3 | 1000Nodes | 10000Nodes
 --- | --- | --- | --- |--- |---
