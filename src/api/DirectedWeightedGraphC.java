@@ -1,5 +1,6 @@
 package api;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 
@@ -110,8 +111,13 @@ public class DirectedWeightedGraphC implements DirectedWeightedGraph{
         if (this.MC>0){
             throw new RuntimeException();
         }
-        Iterator NodeIterator = this.EdgeCollection.entrySet().iterator();
-        return NodeIterator;
+        ArrayList<EdgeData> allEdge = new ArrayList<>();
+        for (Integer src : this.getEdgeCollection().keySet()) {
+            for (Integer dest : this.getEdgeCollection().get(src).keySet()) {
+                allEdge.add(this.getEdgeCollection().get(src).get(dest));
+            }
+        }
+        return allEdge.iterator();
     }
 
     @Override
@@ -119,8 +125,8 @@ public class DirectedWeightedGraphC implements DirectedWeightedGraph{
         if (this.MC>0){
             throw new RuntimeException();
         }
-        Iterator NodeIterator = this.EdgeCollection.get(node_id).entrySet().iterator();
-        return NodeIterator;
+        Iterator EdgeIterator = this.EdgeCollection.get(node_id).entrySet().iterator();
+        return EdgeIterator;
     }
 
     @Override
