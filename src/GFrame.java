@@ -112,9 +112,9 @@ public class GFrame extends JFrame implements KeyListener , ActionListener {
     }
 
     public static void main(String[] args) {
-//        String file = args[0];
-//        Ex2.runGUI(file);
-        Ex2.runGUI("G1.json");
+        String file = args[0];
+        Ex2.runGUI(file);
+//        Ex2.runGUI("G1.json");
     }
 
     @Override

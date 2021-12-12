@@ -5,21 +5,11 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 
-import api.DirectedWeightedGraph;
-import api.EdgeData;
-import api.NodeData;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
 
-import java.awt.*;
-import java.awt.geom.Point2D;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.IOException;
-import java.rmi.server.ExportException;
-import java.text.MessageFormat;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -117,15 +107,6 @@ public class DirectedWeightedGraphAlgorithmsC implements DirectedWeightedGraphAl
             }
         }
     }
-    private void DFSUtil(int nodeKey,HashMap<Integer , Boolean> visited) {
-        visited.remove(nodeKey);
-        visited.put(nodeKey,true);
-        for (Integer key : this.graph.getEdgeCollection().get(nodeKey).keySet()) {
-            if (!visited.get(key)){
-                DFSUtil(key,visited);
-            }
-        }
-    }
 
     // Function that returns transpose of this graph
     private DirectedWeightedGraph getTranspose(){
@@ -147,11 +128,6 @@ public class DirectedWeightedGraphAlgorithmsC implements DirectedWeightedGraphAl
         return (double) Dijkstra(src,dest)[0];
     }
 
-    //    @Override
-//    public double shortestPathDist(int src, int dest) {
-//
-//        HashMap<Integer, Boolean> isPrinted= new HashMap<>();
-//
     public int minWeight(HashMap<Integer,NodeData> Q){
         NodeData min = null;
         for (NodeData node : Q.values()){
@@ -161,30 +137,6 @@ public class DirectedWeightedGraphAlgorithmsC implements DirectedWeightedGraphAl
             }
         }
         return min.getKey();
-    }
-
-    public void  Dijkstra3(int src){
-        HashMap<Integer,Integer> p = new HashMap<>();
-        HashMap<Integer,NodeData> Q = new HashMap<>();
-        for (Integer key : this.graph.getNodeCollection().keySet()){
-            p.put(key,null);
-            this.graph.getNodeCollection().get(key).setWeight(Double.MAX_VALUE);
-            Q.put(key,this.graph.getNodeCollection().get(key));
-        }
-        this.graph.getNodeCollection().get(src).setWeight(0);
-
-        while (!Q.isEmpty()){
-            NodeData u = this.graph.getNodeCollection().get(minWeight(Q));
-            Q.remove(minWeight(Q));
-            if (this.graph.getEdgeCollection().get(u.getKey())!= null){
-                for (EdgeData e : this.graph.getEdgeCollection().get(u.getKey()).values()){
-                    if (Q.get(e.getDest())!= null) {
-                        relax(e, Q, p ,u);
-                    }
-                }
-            }
-        }
-
     }
 
     public void  Dijkstra2(int src){
@@ -317,7 +269,6 @@ public class DirectedWeightedGraphAlgorithmsC implements DirectedWeightedGraphAl
                 if(i!=j) {
                     if (!iWasChanged){
                         Dijkstra2(cities.get(i).getKey());
-//                        double dist = shortestPathDist(cities.get(i).getKey(), cities.get(j).getKey());
                         iWasChanged = false;
                     }
                     double dist = cities.get(j).getWeight();
@@ -368,11 +319,8 @@ public class DirectedWeightedGraphAlgorithmsC implements DirectedWeightedGraphAl
             Iterator itEdge = edgesArr.iterator();
             Iterator itNode = nodesArr.iterator();
 
-
             DirectedWeightedGraphC graph= new DirectedWeightedGraphC();
-
             Map mapNode;
-//            HashMap<Integer, NodeData> nodesMap = new HashMap<>();
 
             while (itNode.hasNext()) {
                 mapNode = (Map) itNode.next();
@@ -383,25 +331,16 @@ public class DirectedWeightedGraphAlgorithmsC implements DirectedWeightedGraphAl
                 double z = Double.parseDouble(pos[2]);
                 NodeDataC node = new NodeDataC(id,new GeoLocationC(x,y,z),0,"",0);
                 graph.addNode(node);
-//                nodesMap.put(id,node);
             }
 
             Map mapEdge;
-//            HashMap<Integer, HashMap<Integer, EdgeData>> edgesMap = new HashMap<>();
-
-
             while (itEdge.hasNext()) {
                 mapEdge = (Map) itEdge.next();
                 int src = Integer.parseInt(Objects.toString(mapEdge.get("src")));
                 int dest = Integer.parseInt(Objects.toString(mapEdge.get("dest")));
                 double w = Double.parseDouble(Objects.toString(mapEdge.get("w")));
                 graph.connect(src,dest,w);
-
-
-
-
             }
-//            DirectedWeightedGraph graph = new dwg(nodesMap,edgesMap);
             this.graph= graph;
 
         } catch (Exception e) {

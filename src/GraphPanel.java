@@ -99,7 +99,7 @@ public class GraphPanel extends JPanel implements MouseListener {
 
             double XNew = ((x1 - (((DirectedWeightedGraphC) algo.getGraph()).minXValue())) / hx) * (Toolkit.getDefaultToolkit().getScreenSize().width - 100);
             double YNew = ((y1 - (((DirectedWeightedGraphC) algo.getGraph()).minYValue())) / hy) * (Toolkit.getDefaultToolkit().getScreenSize().height - 100);
-            g.setColor(Color.WHITE);
+            g.setColor(Color.orange);
             g.fillOval((int) XNew + 50, (int) YNew + 50, 10, 10);
             g.setFont(new Font("serif", Font.PLAIN, 10));
 

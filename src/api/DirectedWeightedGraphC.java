@@ -98,19 +98,27 @@ public class DirectedWeightedGraphC implements DirectedWeightedGraph{
 
     @Override
     public Iterator<NodeData> nodeIter() {
+        if (this.MC>0){
+            throw new RuntimeException();
+        }
         Iterator NodeIterator = this.NodeCollection.entrySet().iterator();
         return NodeIterator;
     }
 
     @Override
     public Iterator<EdgeData> edgeIter() {
-        //איטרטור של איטרטורים, לתקןן
+        if (this.MC>0){
+            throw new RuntimeException();
+        }
         Iterator NodeIterator = this.EdgeCollection.entrySet().iterator();
         return NodeIterator;
     }
 
     @Override
     public Iterator<EdgeData> edgeIter(int node_id) {
+        if (this.MC>0){
+            throw new RuntimeException();
+        }
         Iterator NodeIterator = this.EdgeCollection.get(node_id).entrySet().iterator();
         return NodeIterator;
     }
