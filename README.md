@@ -128,10 +128,10 @@ The two classes holds all the gui data and show the graph with all the options o
 ## UML:
 ![Ex2_UMLpng](https://user-images.githubusercontent.com/80401712/145724358-c7400be3-2a04-41c5-baae-df3617343d8c.png)<br>
 ## Results:
-Results | G1 | G2 | G3 | 1000Nodes | 10000Nodes
---- | --- | --- | --- |--- |---
-Center | 30 ms | 27 ms | 33 ms | 1 sec 865 ms	| 17 min 27 sec
-Shortest Path Distance | 22 ms | 23 ms | 23 ms | 73 ms | 1 sec 158 ms
-Shortest Path | 23 ms	| 23 ms	| 23 ms	| 64 ms	| 1 sec 134 ms 
-TSP |26 ms | 28 ms | 38 ms | 1 sec 802 ms | 16 min 18 sec
-Is Connected |24 ms | 28 ms | 23 ms | 47 ms | 149 ms
+Results | G1 | G2 | G3 | 1000Nodes | 10000Nodes | 100000Nodes
+--- | --- | --- | --- |--- |--- |---
+Center | 30 ms | 27 ms | 33 ms | 1 sec 865 ms	| 17 min 27 sec | --
+Shortest Path Distance | 22 ms | 23 ms | 23 ms | 73 ms | 1 sec 158 ms | 57 sec 44 ms
+Shortest Path | 23 ms	| 23 ms	| 23 ms	| 64 ms	| 1 sec 134 ms | 3 min 40 sec
+TSP |26 ms | 28 ms | 38 ms | 1 sec 802 ms | 16 min 18 sec | up then 1 h 10 min
+Is Connected |24 ms | 28 ms | 23 ms | 47 ms | 149 ms | 2 sec 399 ms
